@@ -1,0 +1,35 @@
+số hạnh phúc: Có 2k chữ số
+tổng k chữ số đầu = tổng k chữ số cuối
+
+Yêu cầu đề: Tính các số hạnh phúc có n chữ số.
+
+Hàm check() {
+Bước 1: Đếm chữ số của n
+ví dụ: 
+	đếm = 0;
+	345 / 10 = 34 => đếm = 1;
+	34 / 10 = 3 => đếm = 2;
+	3 / 10 = 0 => đếm = 3;
+
+Bước 2: Nếu n % 2 != 0 
+return 0;
+Bước 3: Ngược lại chia số 2k thành 2 phần k
+ Ví dụ: n = 356275
+	count = 6
+	y1 = 10 ^ (6/3) = 1000 
+	x1 = n % y1 = 356275 % 1000 = 275
+	x2 = n / y1 = 356275 / 1000 = 356
+Bước 4: Tính tổng các phần tử trong từng phần
+	s1 = tổng các chữ số của x1
+	s2 = tổng các chữ số của x2
+Bước 5:
+	Nếu s1 == s2 {
+		return 1;	
+	}
+}
+
+
+
+
+
+
