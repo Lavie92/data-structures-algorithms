@@ -16,11 +16,6 @@ void init(node *&t) {
 	t = NULL;	
 }
 
-//kiem tra tree rong?
-int isEmpty(node *t) {
-	return (t == NULL);
-}
-
 //khoi tao 1 node
 node *createNode(dataType x) {
 	node *p;
